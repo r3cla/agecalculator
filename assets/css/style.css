@@ -1,0 +1,225 @@
+body, html {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 86%); 
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 500px; 
+  width: 300px; 
+  background-color: hsl(0, 0%, 100%); 
+  padding-top: 20px; 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  border-bottom-right-radius: 100px;
+}
+
+.input-group { 
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-group > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: hsl(0, 1%, 44%);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.day, .month, .year {
+  -webkit-appearance: none; 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  color: hsl(0, 1%, 44%);
+  font-size: 14px;
+  font-weight: 800;
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+
+.day::-webkit-inner-spin-button,
+.month::-webkit-inner-spin-button,
+.year::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.container { /* container for custom hr and submit-btn */
+  position: relative;
+}
+
+.custom-hr {
+  width: 200px; 
+  border: 1px solid rgba(211, 211, 211, 0.521); 
+  position: relative;
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.submit-btn {
+  background-color: hsl(259, 100%, 65%);
+  border: none; 
+  cursor: pointer;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  position: absolute; /* position the button so it overlaps the horizontal line */
+  z-index: 2;
+  margin-left: 70px;
+  margin-top: -20px;
+}
+
+
+.submit-btn:hover {
+  background-color:black;
+}
+
+.output {
+  margin-right: 0;
+  margin-top: 50px;
+}
+
+p {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+}
+
+
+
+/* footer */
+
+.attribution {
+    font-size: 0.7em;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: hsl(220, 15%, 55%); 
+    background-color: hsl(0, 0%, 12%);
+    padding-top: 5px;
+    
+  }
+  
+.attribution a {
+    color: hsl(218, 26%, 47%); 
+    text-decoration: none;
+  }
+  
+.attribution a:hover {
+    text-decoration: underline;
+  }
+
+
+
+  /* optimisations */
+
+  @media (min-width: 640px) { /* target larger mobile devices */
+    .card {
+      width: 650px; 
+      padding-top: 40px; 
+    }
+
+    .custom-hr {
+      width: 400px;
+    }
+
+    p {
+      font-size: 28px;
+    }
+
+    .day, .month, .year {
+      font-size: 16px;
+      width: 100px;
+      height: 50px;
+    }
+    
+    .input-group label {
+      font-size: 16px;
+    }
+  
+    .submit-btn {
+      width: 70px; 
+      height: 70px;
+      border-radius: 40px;
+      margin-left: 160px;
+    }
+
+    .input-group {
+      justify-content: space-between; 
+    }
+  }
+
+  @media (min-width: 1800px) { /* target desktop devices */
+    .card {
+      width: 750px;
+      height: 600px;
+      padding-top: 50px; 
+      border-bottom-right-radius: 220px;
+    }
+  
+    .custom-hr {
+      width: 570px;
+      margin-right: 134px;
+    }
+  
+    p {
+      font-size: 64px;
+      margin: 0;
+      margin-right: 250px;
+    }
+
+    .day, .month, .year {
+      font-size: 32px;
+    }
+    
+    .input-group label {
+      font-size: 16px;
+    }
+  
+    .submit-btn {
+      width: 80px;
+      height: 80px;
+      border-radius: 50px;
+      margin: -50px 520px;
+    }
+  
+    .input-group {
+      justify-content: space-around;
+      margin-right: 300px;
+    }
+  
+  }
