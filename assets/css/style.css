@@ -92,7 +92,7 @@ main {
   height: 60px;
   position: absolute; /* position the button so it overlaps the horizontal line */
   z-index: 2;
-  margin-left: 70px;
+  margin-left: 120px;
   margin-top: -20px;
 }
 
@@ -103,7 +103,8 @@ main {
 
 .output {
   margin-right: 0;
-  margin-top: 50px;
+  margin-top: 80px;
+  margin-left: 75px;
 }
 
 p {
@@ -117,6 +118,39 @@ span {
   color: hsl(259, 100%, 65%);
 }
 
+.error-message {
+  color: red;
+  font-size: 0.6em;
+  height: 10px;
+  width: 80px;
+}
+
+input.error {
+  border-color: red;
+}
+
+.error {
+  border-color: red;
+}
+
+label.error-label {
+  color: rgb(219, 3, 3);
+}
+
+.fade-in-scale-up {
+  animation: fadeInScaleUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInScaleUp {
+  from {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
 
 
 /* footer */
@@ -189,6 +223,10 @@ span {
       height: 600px;
       padding-top: 50px; 
       border-bottom-right-radius: 220px;
+    }
+
+    .output {
+      margin-top: 50px;
     }
   
     .custom-hr {

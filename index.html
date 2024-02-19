@@ -16,33 +16,41 @@
 <body>
   <main>
     <section class="card">
+        <!-- Start form -->
+      <form id="ageCalculatorForm">
         <div class="input-group">
             <div>
                 <label for="day">DAY</label>
-                <input type="number" id="day" class="day" placeholder="DD">
+                <input type="text" id="day" class="day" placeholder="DD">
+                <span class ="error-message" id="day-error"></span>
             </div>
             <div>
                 <label for="month">MONTH</label>
-                <input type="number" id="month" class="month" placeholder="MM">
+                <input type="text" id="month" class="month" placeholder="MM">
+                <span class ="error-message" id="month-error"></span>
             </div>
             <div>
                 <label for="year">YEAR</label>
-                <input type="number" id="year" class="year" placeholder="YYYY">
+                <input type="text" id="year" class="year" placeholder="YYYY">
+                <span class ="error-message" id="year-error"></span>
             </div>
         </div>
       
         <div class="container">
-        <hr class="custom-hr">
-        <button class="submit-btn">
-          <img src="assets/images/icon-arrow.svg">
-        </button>
+          <hr class="custom-hr">
+        
+          <button type="submit" class="submit-btn" value="Calculate Age">
+            <img src="assets/images/icon-arrow.svg" alt="Calculate Age">
+          </button>
         </div>
 
         <div class="output">
           <p><span id="spanYear">- -</span> years</p>
           <p><span id="spanMonth">- -</span> months</p>
           <p><span id="spanDay">- -</span> days</p>
-      </div>
+        </div>
+      </form>
+      <!-- End form -->
 
     </section>
 </main>
@@ -54,17 +62,6 @@
   </footer>
 
 
-<!-- this simple script formats singular numbers to start with a zero (eg. 05 instead of 5) -->
-<script>
-  function formatInput(input) {
-    if (input.value.length === 1) {
-      input.value = '0' + input.value;
-    }
-  }
-</script>
-
-<!-- link to the calculate.js script that calculates the age -->
-<script src="calculate.js"></script>
-
+<script src="calc.js"></script>
 </body>
-</html>
+</html> 
