@@ -10,7 +10,13 @@ After some quick testing, the app does the following:
 - Displays the age for any valid birth date.
 - Displays relevant errors.
 - Animates the age output.
-- It should display correctly on most devices. I tested on multiple android phone screens, iPad and Firefox desktop browser.
+
+Devices used for testing:
+- Firefox browser (desktop)
+- Firefox browser (mobile)
+- Firefox responsive design mode (Android S10, S20 and iPad OS 14.7.1)
+  
+**Note:** The page was designed for devices starting with a minimum width of 320px, then scaled up using 2 breakpoints: 640px and 1800px.
 
 ### The HTML/CSS side was straightforward, but the JS was pretty hectic for me and I admittedly needed to do alot of googling, but here are the condensed steps that led to me completing the script:
 
@@ -39,3 +45,6 @@ How: Overrode the default form submission behavior by adding an event listener t
 - W3Schools for basic syntax and examples.
 - Stack Overflow for troubleshooting specific issues and community advice.
 - GPT-4 for guidance, code optimization suggestions, and best practices.
+
+
+*As always, feedback is welcome!*
