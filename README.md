@@ -18,7 +18,7 @@ Devices used for testing:
   
 **Note:** The page was designed for devices starting with a minimum width of 320px, then scaled up using 2 breakpoints: 640px and 1800px.
 
-### The HTML/CSS side was straightforward, but the JS was pretty hectic for me and I admittedly needed to do alot of googling, but here are the condensed steps that led to me completing the script:
+### The HTML/CSS side was relatively straightforward, but the JS was pretty hectic for me and I admittedly needed to do alot of googling, but here are the condensed steps that led to me completing the script:
 
 #### Initialization on Page Load:
 How: Implemented an event listener for DOMContentLoaded to trigger the JavaScript code. This ensures the script interacts with fully loaded elements.
