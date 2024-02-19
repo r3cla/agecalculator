@@ -45,6 +45,7 @@ How: Overrode the default form submission behavior by adding an event listener t
 - W3Schools for basic syntax and examples.
 - Stack Overflow for troubleshooting specific issues and community advice.
 - GPT-4 for guidance, code optimization suggestions, and best practices.
+- Frontend Mentor for growing your skillset and the awesome community.
 
 
 > [!NOTE]
