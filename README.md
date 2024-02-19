@@ -6,8 +6,13 @@
 
 [![My Skills](https://skillicons.dev/icons?i=js,html,css,git,vscode)](https://github.com/tandpfun/skill-icons)
 
+---
 
 This challenge really exposed my weaknesses, notably Javascript. Nonetheless it was a very good experience and fun (although stressful) to do!
+
+Test for yourself:
+- [Live site](https://r3cla.github.io/agecalculator/)
+- [Repo](https://github.com/r3cla/agecalculator/tree/master)
 
 After some quick testing, the app does the following:
 - Displays the age for any valid birth date.
