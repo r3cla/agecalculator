@@ -14,7 +14,7 @@ After some quick testing, the app does the following:
 Devices used for testing:
 - Firefox browser (desktop)
 - Firefox browser (mobile)
-- Firefox responsive design mode (Android S10, S20 and iPad OS 14.7.1)
+- Firefox responsive design mode (Custom 320px width, Android S10, Android S20 and iPad OS 14.7.1)
   
 **Note:** The page was designed for devices starting with a minimum width of 320px, then scaled up using 2 breakpoints: 640px and 1800px.
 
