@@ -217,7 +217,7 @@ label.error-label {
     }
   }
 
-  @media (min-width: 1800px) { /* target desktop devices */
+  @media (min-width: 1700px) { /* target desktop devices */
     .card {
       width: 750px;
       height: 600px;
