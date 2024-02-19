@@ -10,27 +10,32 @@ After some quick testing, the app does the following:
 - Displays the age for any valid birth date.
 - Displays relevant errors.
 - Animates the age output.
+- It should display correctly on most devices. I tested on multiple android phone screens, iPad and Firefox desktop browser.
 
 ### The HTML/CSS side was straightforward, but the JS was pretty hectic for me and I admittedly needed to do alot of googling, but here are the condensed steps that led to me completing the script:
 
-    #### Starting Off When the Page Loads:
-        I made sure our JavaScript kicks in only after the whole webpage is loaded. This way, everything is in place before our code starts doing its thing.
+#### Initialization on Page Load:
+How: Implemented an event listener for DOMContentLoaded to trigger the JavaScript code. This ensures the script interacts with fully loaded elements.
 
-    #### Setting Up the Essentials:
-        I set up some variables for all the bits and pieces we need to keep track of, like the input fields for the day, month, and year, where to show errors, and where the age will pop up.
+#### Variable Initialization:
+How: Selected form elements using document.getElementById and querySelectorAll to create JavaScript references to these HTML elements. This setup allows the script to easily read inputs and display outputs or errors.
 
-    #### Helpful Little Tools:
-        I wrote a small function to check if something's a number – super handy for making sure dates are legit.
-        There are also a couple of functions to make things look pretty (or not) depending on whether there are mistakes in the date someone puts in.
+#### Utility Functions:
+How: Developed custom JavaScript functions. isNumber checks for numeric input using a regular expression, and clearErrorStyles and applyErrorStyles use class manipulation to alter the appearance of form elements, enhancing user feedback.
 
-    #### The Birthday Math:
-        I crafted a function that figures out how old someone is down to the day. It’s pretty neat, handling all those tricky bits like leap years and months with different numbers of days.
+#### Age Calculation Logic:
+How: Created a function that takes birthdate and current date, calculates the difference in years, months, and days. Special attention was given to the intricacies of date calculations, like handling the end of months and leap years, using JavaScript's Date object.
 
-    #### Showing the Age:
-        I also set up a way to display that calculated age right on the webpage in a really clear way.
+#### Displaying Calculated Age:
+How: Utilized DOM manipulation to update the text content of specific span elements. This function dynamically alters the innerHTML of these elements to show the calculated age.
 
-    #### Making Sure the Date Makes Sense:
-        The main event is this function that checks the date someone enters. It’s looking for any blanks or weird inputs, and making sure the date isn’t something impossible (like being in the future).
+#### Date Validation Mechanism:
+How: Built a comprehensive validation function that checks each input field for common errors such as empty values, non-numeric characters, and unrealistic date entries. It utilizes conditional statements to enforce these rules and provide appropriate feedback.
 
-    #### Handling the Form Submission:
-        Instead of the usual form submission, I made it so when you hit submit, it runs our date check first. This way, we only get to the fancy age showing part if all the date stuff is correct.
+#### Form Submission Customization:
+How: Overrode the default form submission behavior by adding an event listener to the form's submit event. This modification calls the validation function, preventing the form from submitting if the date is invalid and proceeding with the age calculation if it is valid.
+
+### Useful resources:
+- W3Schools for basic syntax and examples.
+- Stack Overflow for troubleshooting specific issues and community advice.
+- GPT-4 for guidance, code optimization suggestions, and best practices.
