@@ -2,7 +2,10 @@
 
 ![My attempt at the Age calculator app coding challenge](./appexample.png)
 
-## Welcome! 👋
+**Created with:**
+
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,git,vscode)](https://github.com/tandpfun/skill-icons)
+
 
 This challenge really exposed my weaknesses, notably Javascript. Nonetheless it was a very good experience and fun (although stressful) to do!
 
